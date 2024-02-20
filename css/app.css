@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "font";
+    src: url('../font/Mahboubeh_mehravar.ttf');
+}*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "font";
+}html{
+    scroll-behavior: smooth;
+}a{
+    text-decoration: none;
+    color: var(--color-body);
+}a:hover{
+    color: var(--color-brand);
+}ul li{
+    list-style: none;
+}img{
+    width: 100%;
+}
+:root{
+    --color-body:#b6cbce;
+    --color-heading:#eef3db;
+    --color-base:#033f47;
+    --color-base2:#022a30;
+    --color-brand:#e0f780;
+    --color-brand2:#deff58;
+    --sidebar-width:260px;
+}
+body{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+}.text-brand{
+    color: var(--color-brand);
+}.full-h{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #fff;
+}.shadow-effect{
+    transition: all 0.4s;
+}.shadow-effect:hover{
+    box-shadow: -3px 3px 0 0 var(--color-brand);
+}
+/* header */
+.navbar{
+    background-color: var(--color-base);
+}
+@media screen and (min-width: 992px) {
+  .navbar{
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(rgba(3,63,71,0.8),rgba(3,61,71,0.9));
+  }
+  /* content-wrap */
+  #content-wrap{
+    padding-right: var(--sidebar-width);
+  }
+}.nav-link{
+    color: #fff;
+    font-weight: bold;
+}.nav-link:hover{
+    color: var(--color-brand);
+}.navbar .nav-link.active{
+    color: var(--color-brand);
+}
+/* btn */
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}.btn-brand:hover,.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}.link-custum{
+    position: relative;
+    font-weight: 700;
+}.link-custum::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    right: 0;
+    top: 110%;
+    transition: all 0.4s;
+}.link-custum:hover::after{
+    width: 100%;
+}
+/* services */
+.services{
+    background-color: var(--color-base);
+    cursor: pointer;
+}.services .iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}.services p{
+    text-align: justify;
+}
+/* work */
+.card-work{
+    background-color: var(--color-base);
+    cursor: pointer;
+}
+/* about */
+.about-me{
+    background-color: var(--color-base);
+}
